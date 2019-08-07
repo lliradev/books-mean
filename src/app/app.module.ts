@@ -11,6 +11,7 @@ import { BookDetailComponent } from './components/books/book-detail/book-detail.
 import { BookCreateComponent } from './components/books/book-create/book-create.component';
 import { BookEditComponent } from './components/books/book-edit/book-edit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BookComponent,
     BookDetailComponent,
     BookCreateComponent,
-    BookEditComponent
+    BookEditComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
