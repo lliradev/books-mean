@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataSource } from '@angular/cdk/collections';
-import { Observable } from 'rxjs';
 import { ApiService } from 'src/app/services/api.service';
+import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-book',
@@ -24,6 +24,18 @@ export class BookComponent implements OnInit {
       }, err => {
         console.log(err);
       });
+  }
+
+  onGeneratePDF() {
+    var id = document.getElementById('table-books');
+    var pdf = new jsPDF({
+      orientation: '1',
+      unit: 'pt',
+      format: 'carta'
+    });
+    pdf.text('Books List', 180, 10);
+    pdf.fromHTML(id, 100, 15);
+    pdf.save('books.pdf');
   }
 }
 

@@ -2,9 +2,13 @@
   <a mat-raised-button color="primary" [routerLink]="['/book-create']">
     <mat-icon>add</mat-icon>
   </a>
+  <a class="download-pdf" mat-raised-button color="warn" (click)="onGeneratePDF()">
+    Generate PDF
+  </a>
 </div>
+
 <div class="example-container mat-elevation-z8">
-  <table mat-table #table [dataSource]="dataSource">
+  <table mat-table #table [dataSource]="dataSource" id="table-books">
 
     <ng-container matColumnDef="isbn">
       <th mat-header-cell *matHeaderCellDef> ISBN </th>
