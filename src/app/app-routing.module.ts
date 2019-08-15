@@ -6,6 +6,7 @@ import { BookComponent } from './components/books/book/book.component';
 import { BookDetailComponent } from './components/books/book-detail/book-detail.component';
 import { BookCreateComponent } from './components/books/book-create/book-create.component';
 import { BookEditComponent } from './components/books/book-edit/book-edit.component';
+import { LinesComponent } from './components/lines/lines.component';
 
 const routes: Routes = [
   {
@@ -28,9 +29,14 @@ const routes: Routes = [
     component: BookEditComponent,
     data: { title: 'Edit Book' }
   },
-  { path: '',
+  {
+    path: '',
     redirectTo: '/books',
     pathMatch: 'full'
+  },
+  {
+    path: 'lines',
+    component: LinesComponent
   }
 ];
 
