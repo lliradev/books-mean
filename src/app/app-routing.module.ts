@@ -7,6 +7,7 @@ import { BookDetailComponent } from './components/books/book-detail/book-detail.
 import { BookCreateComponent } from './components/books/book-create/book-create.component';
 import { BookEditComponent } from './components/books/book-edit/book-edit.component';
 import { LinesComponent } from './components/lines/lines.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'lines',
     component: LinesComponent
+  },
+  {
+    path: 'bar',
+    component: BarChartComponent
   }
 ];
 

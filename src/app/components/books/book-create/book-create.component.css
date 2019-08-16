@@ -15,3 +15,8 @@
 .button-row {
   margin: 10px 0;
 }
+
+mat-card {
+  margin: 15px auto 1rem;
+  width: 70%;
+}

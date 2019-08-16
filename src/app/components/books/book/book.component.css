@@ -18,3 +18,9 @@
 .download-pdf {
   margin-left: 1rem;
 }
+
+.download-excel {
+  margin-left: 1rem;
+  background: #31B404;
+  color: white;
+}

@@ -14,6 +14,7 @@ import { BookEditComponent } from './components/books/book-edit/book-edit.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { LinesComponent } from './components/lines/lines.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LinesComponent } from './components/lines/lines.component';
     BookCreateComponent,
     BookEditComponent,
     HeaderComponent,
-    LinesComponent
+    LinesComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
